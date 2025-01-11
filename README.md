@@ -33,30 +33,12 @@ NutraTrack is a comprehensive health and wellness tracking application that help
 
 ### Installation
 
-1. Clone the repository:
+Clone the repository:
 ```bash
 git clone https://github.com/kartikeyapandey20/NutraTrack-Frontend.git
 ```
 
-2. Navigate to the project directory:
-```bash
-cd NutraTrack-Frontend
-```
 
-3. Open `index.html` in your preferred web browser to view the application.
-
-## Project Structure
-
-```
-NutraTrack-Frontend/
-├── index.html           # Main dashboard page
-├── activities.html      # Stress relief activities page
-├── styles/
-│   ├── styles.css      # Main stylesheet
-│   └── form.css        # Form-specific styles
-└── assets/
-    └── images/         # Image resources
-```
 
 ## Usage
 
