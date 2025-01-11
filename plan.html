@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Health Companion Workflow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+    <header>
+        <h1>AI Health Companion</h1>
+    </header>
+
+    <div class="container">
+        <div class="section" id="plan">
+            <form action="#">
+                <h2>Personalized Plan</h2>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age"><br><br>
+                <label for="height">Height (cm):</label><br>
+                <input type="number" id="height" name="height"><br><br>
+                <label for="weight">Weight (kg):</label><br>
+                <input type="number" id="weight" name="weight"><br><br>
+                <label for="gender">Gender:</label><br>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                (other fields too)
+                <button class="button" type="submit">Get Plan</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Optional Premium Plan</h2>
+            <p>Want a fully assisted plan with additional features? Sign up for a free trial!</p>
+            <a href="#payment" class="button">Upgrade Now</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AI Health Companion. All rights reserved.</p>
+    </footer>

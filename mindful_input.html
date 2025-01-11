@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Relief & Mindful Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Stress Relief & Mindful Activities</h1>
+    </header>
+
+    <div class="container">
+        <!-- Activity Tracking Form -->
+        <div class="section">
+            <form action="#" method="POST">
+            <h2>Track Your Activities</h2>
+                <label for="activity-date">Date:</label>
+                <input type="date" id="activity-date" name="activity-date" required><br><br>
+
+                <label for="activity-type">Activity Type:</label>
+                <select id="activity-type" name="activity-type" required>
+                    <option value="meditation">Meditation</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="walking">Walking</option>
+                    <option value="deep-breathing">Deep Breathing</option>
+                    <option value="journaling">Journaling</option>
+                </select><br><br>
+
+                <label for="duration">Duration (minutes):</label>
+                <input type="number" id="duration" name="duration" min="1" required><br><br>
+
+                <label for="mood">Mood After Activity:</label>
+                <select id="mood" name="mood" required>
+                    <option value="relaxed">Relaxed</option>
+                    <option value="happy">Happy</option>
+                    <option value="calm">Calm</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="stressed">Stressed</option>
+                </select><br><br>
+
+                <button class="button" type="submit">Save Activity</button>
+            </form>
+        </div>    
+    </div>
+    <footer>
+        <p>&copy; 2025 Mindful Tracker. All rights reserved.</p>
+    </footer>

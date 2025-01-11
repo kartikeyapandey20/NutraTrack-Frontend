@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Diet Plan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>AI Health Companion</h1>
+    </header>
+
+    <div class="container">
+        <div class="section" id="diet-plan">
+            <h2>Your Personalized Diet Plan</h2>
+            
+            <div class="meal">
+                <h3>Breakfast</h3>
+                <p id="breakfast-menu">Oats with fruits, boiled eggs, and green tea.</p>
+                <button class="button" onclick="toggleNutrition('breakfast')">View Nutritional Value</button>
+                <div id="breakfast-nutrition" class="nutrition-info" style="display: none;">
+                    <p>Calories: 350 kcal</p>
+                    <p>Protein: 15 g</p>
+                    <p>Carbs: 40 g</p>
+                    <p>Fats: 10 g</p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Lunch</h3>
+                <p id="lunch-menu">Grilled chicken, quinoa, and steamed vegetables.</p>
+                <button class="button" onclick="toggleNutrition('lunch')">View Nutritional Value</button>
+                <div id="lunch-nutrition" class="nutrition-info" style="display: none;">
+                    <p>Calories: 500 kcal</p>
+                    <p>Protein: 35 g</p>
+                    <p>Carbs: 50 g</p>
+                    <p>Fats: 15 g</p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Snacks</h3>
+                <p id="snacks-menu">Nuts and a cup of yogurt.</p>
+                <button class="button" onclick="toggleNutrition('snacks')">View Nutritional Value</button>
+                <div id="snacks-nutrition" class="nutrition-info" style="display: none;">
+                    <p>Calories: 200 kcal</p>
+                    <p>Protein: 8 g</p>
+                    <p>Carbs: 10 g</p>
+                    <p>Fats: 15 g</p>
+                </div>
+            </div>
+
+            <div class="meal">
+                <h3>Dinner</h3>
+                <p id="dinner-menu">Grilled fish, brown rice, and a side salad.</p>
+                <button class="button" onclick="toggleNutrition('dinner')">View Nutritional Value</button>
+                <div id="dinner-nutrition" class="nutrition-info" style="display: none;">
+                    <p>Calories: 400 kcal</p>
+                    <p>Protein: 30 g</p>
+                    <p>Carbs: 45 g</p>
+                    <p>Fats: 10 g</p>
+                </div>
+            </div>
+
+            <div class="section" id="recommendations">
+                <h3>Recommended Foods</h3>
+                <ul id="food-list">
+                    <li>Whole grains like quinoa and oats</li>
+                    <li>Lean protein like chicken and fish</li>
+                    <li>Fruits like apples, bananas, and berries</li>
+                    <li>Vegetables like spinach, broccoli, and carrots</li>
+                    <li>Healthy fats like nuts and avocados</li>
+                </ul>
+            </div>
+
+            <button class="button" onclick="window.history.back()">Go Back</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AI Health Companion. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle the visibility of nutritional value sections
+        function toggleNutrition(meal) {
+            const nutritionDiv = document.getElementById(`${meal}-nutrition`);
+            if (nutritionDiv.style.display === "none") {
+                nutritionDiv.style.display = "block";
+            } else {
+                nutritionDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

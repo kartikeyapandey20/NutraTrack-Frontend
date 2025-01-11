@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Pattern Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Sleep Pattern Tracker</h1>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <form action="#" method="POST">
+                <h2>Track Your Sleep</h2>
+                <label for="sleep-date">Date:</label>
+                <input type="date" id="sleep-date" name="sleep-date" required><br><br>
+
+                <label for="bed-time">Bedtime:</label>
+                <input type="time" id="bed-time" name="bed-time" required><br><br>
+
+                <label for="wake-time">Wake Time:</label>
+                <input type="time" id="wake-time" name="wake-time" required><br><br>
+
+                <label for="sleep-quality">Sleep Quality:</label>
+                <select id="sleep-quality" name="sleep-quality" required>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select><br><br>
+
+                <button class="button" type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sleep Tracker. All rights reserved.</p>
+    </footer>
